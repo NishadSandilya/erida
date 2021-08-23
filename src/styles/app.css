@@ -63,7 +63,7 @@
 }
 
 .App__productCardWrapper__details li:before {
-  background-image: url("http://b80d-2405-201-a803-6043-fd28-2276-c2a3-6b.ngrok.io/cdn/plus.png");
+  background-image: url("https://b80d-2405-201-a803-6043-fd28-2276-c2a3-6b.ngrok.io/cdn/plus.png");
   background-size: cover;
   display: inline-block;
   width: 12px;

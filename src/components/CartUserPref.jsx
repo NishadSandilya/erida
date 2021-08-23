@@ -22,7 +22,6 @@ const useStyles = makeStyles({
 
 const CartUserPref = ({fields, btnControl}) => {
     const classes = useStyles()
-    const [userPreferences, setUserPreferences] = useState(undefined)
     return (
         <div className = "App__productCardWrapper__preferenceBox">
             <p className = "App__productCardWrapper__heading">We need this information before proceeding</p>
@@ -53,11 +52,11 @@ const CartUserPref = ({fields, btnControl}) => {
             </form>
             <p className = "App__productCardWrapper__preferenceBox__additionalInfo">Don't know <br/> what this is?</p>
             <div className = "App__productCardWrapper__preferenceBox__vector">
-                <img src="http://b80d-2405-201-a803-6043-fd28-2276-c2a3-6b.ngrok.io/cdn/vector.png" alt="Illustration" width = "300px"/>
+                <img src="https://b80d-2405-201-a803-6043-fd28-2276-c2a3-6b.ngrok.io/cdn/vector.png" alt="Illustration" width = "300px"/>
             </div>
             <div className = "App__productCardWrapper__preferenceBox__ctaBox">
                 <div onClick = {btnControl} className = "App__productCardWrapper__preferenceBox__ctaBox__backImg">
-                    <img src="http://b80d-2405-201-a803-6043-fd28-2276-c2a3-6b.ngrok.io/cdn/back.png" alt="Back Arrow"/>
+                    <img src="https://b80d-2405-201-a803-6043-fd28-2276-c2a3-6b.ngrok.io/cdn/back.png" alt="Back Arrow"/>
                 </div>
                 <button className = "App__productCardWrapper__preferenceBox__ctaBox__cta">FINALIZE</button>
             </div>

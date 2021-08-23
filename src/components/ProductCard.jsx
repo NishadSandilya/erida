@@ -13,7 +13,7 @@ const ProductCard = () => {
         async function fetchProducts(){
             const data = await axios({
                 method: "GET",
-                url: "http://b80d-2405-201-a803-6043-fd28-2276-c2a3-6b.ngrok.io/v1/products"
+                url: "https://b80d-2405-201-a803-6043-fd28-2276-c2a3-6b.ngrok.io/v1/products"
             })
             setProducts(data.data)
         }
