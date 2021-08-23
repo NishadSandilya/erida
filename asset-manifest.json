@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/erida/static/css/main.e2bbec30.chunk.css",
-    "main.js": "/erida/static/js/main.88c8d353.chunk.js",
-    "main.js.map": "/erida/static/js/main.88c8d353.chunk.js.map",
+    "main.css": "/erida/static/css/main.3552de3b.chunk.css",
+    "main.js": "/erida/static/js/main.068df2e1.chunk.js",
+    "main.js.map": "/erida/static/js/main.068df2e1.chunk.js.map",
     "runtime-main.js": "/erida/static/js/runtime-main.401c4e67.js",
     "runtime-main.js.map": "/erida/static/js/runtime-main.401c4e67.js.map",
-    "static/js/2.d55aff0d.chunk.js": "/erida/static/js/2.d55aff0d.chunk.js",
-    "static/js/2.d55aff0d.chunk.js.map": "/erida/static/js/2.d55aff0d.chunk.js.map",
+    "static/js/2.220a0099.chunk.js": "/erida/static/js/2.220a0099.chunk.js",
+    "static/js/2.220a0099.chunk.js.map": "/erida/static/js/2.220a0099.chunk.js.map",
     "index.html": "/erida/index.html",
-    "static/css/main.e2bbec30.chunk.css.map": "/erida/static/css/main.e2bbec30.chunk.css.map",
-    "static/js/2.d55aff0d.chunk.js.LICENSE.txt": "/erida/static/js/2.d55aff0d.chunk.js.LICENSE.txt"
+    "static/css/main.3552de3b.chunk.css.map": "/erida/static/css/main.3552de3b.chunk.css.map",
+    "static/js/2.220a0099.chunk.js.LICENSE.txt": "/erida/static/js/2.220a0099.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.401c4e67.js",
-    "static/js/2.d55aff0d.chunk.js",
-    "static/css/main.e2bbec30.chunk.css",
-    "static/js/main.88c8d353.chunk.js"
+    "static/js/2.220a0099.chunk.js",
+    "static/css/main.3552de3b.chunk.css",
+    "static/js/main.068df2e1.chunk.js"
   ]
 }
