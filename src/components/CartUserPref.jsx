@@ -1,7 +1,6 @@
 //Imports
 
 import { makeStyles, TextField } from "@material-ui/core"
-import { useState } from "react"
 
 const useStyles = makeStyles({
     textField_label: {

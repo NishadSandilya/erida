@@ -8,11 +8,16 @@
 }
 
 .App {
+  position: relative;
   min-width: 100vw;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -23,8 +28,9 @@
 
 .App__productCardWrapper {
   position: relative;
+  margin-bottom: 25px;
   width: 80%;
-  height: 45vh;
+  min-height: 45vh;
   border: solid 1px #e6e6e6;
   -webkit-box-shadow: 5px 8px 25px 5px rgba(0, 0, 0, 0.13);
           box-shadow: 5px 8px 25px 5px rgba(0, 0, 0, 0.13);
@@ -147,9 +153,11 @@
   display: block;
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  width: 100%;
+  min-height: 45vh;
   background-color: white;
   border-radius: 15px;
   z-index: 1000;
