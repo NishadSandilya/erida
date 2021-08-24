@@ -111,11 +111,8 @@
         }
         &__preferenceBox{
             display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            width: 80%;
+            min-height: 45vh;
             background-color: rgb(255, 255, 255);
             border-radius: 15px;
             z-index: 1000;
