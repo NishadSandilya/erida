@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/erida/static/css/main.3552de3b.chunk.css",
-    "main.js": "/erida/static/js/main.068df2e1.chunk.js",
-    "main.js.map": "/erida/static/js/main.068df2e1.chunk.js.map",
+    "main.js": "/erida/static/js/main.4c1c36f4.chunk.js",
+    "main.js.map": "/erida/static/js/main.4c1c36f4.chunk.js.map",
     "runtime-main.js": "/erida/static/js/runtime-main.401c4e67.js",
     "runtime-main.js.map": "/erida/static/js/runtime-main.401c4e67.js.map",
     "static/js/2.220a0099.chunk.js": "/erida/static/js/2.220a0099.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.401c4e67.js",
     "static/js/2.220a0099.chunk.js",
     "static/css/main.3552de3b.chunk.css",
-    "static/js/main.068df2e1.chunk.js"
+    "static/js/main.4c1c36f4.chunk.js"
   ]
 }
