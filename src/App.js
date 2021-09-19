@@ -1,17 +1,26 @@
 //Imports
 
-import ProductCard from "./components/ProductCard"
 import { createTheme, ThemeProvider } from '@material-ui/core'
-import {useEffect, useState} from 'react'
-import axios from 'axios'
+import Home from './components/Home'
+import { Route, Switch } from 'react-router-dom'
+import Support from './components/Support'
+import Values from './components/Values'
+import About from './components/About'
+import Legal from './components/Legal'
+import Logo from "./components/Logo"
+import MenuBtn from "./components/MenuBtn"
+import Menu from "./components/Menu"
+import { useState } from 'react'
+import Services from './components/Services'
+import RemoteFix from './components/RemoteFix'
 
 const appTheme = createTheme({
     palette: {
         primary: {
-            main: '#FFFFFF'
+            main: '#000000'
         },
         secondary: {
-            main: '#000000'
+            main: '#707070'
         }
     },
     typography: {
@@ -26,26 +35,25 @@ const appTheme = createTheme({
 
 //Create a functional Component App
 const App = () => {
-    useEffect(() => {
-        //Call the products after page load
-        async function fetchProducts(){
-            const data = await axios({
-                method: "GET",
-                url: "https://b80d-2405-201-a803-6043-fd28-2276-c2a3-6b.ngrok.io/v1/products"
-            })
-            setProducts(data.data)
-        }
-        fetchProducts()
-    }, [])
-
-    const [products, setProducts] = useState(undefined)
+    const [ menuActive, setMenuActive ] = useState(false)
     //return JSx
     return (
-        <ThemeProvider theme = {appTheme}>
+        <ThemeProvider theme={appTheme}>
             <div className="App">
-                {products?.payload.docs.map(element => {
-                    return(<ProductCard prod = {element}/>)
-                })}               
+                <Logo />
+                <MenuBtn openMenu = {() => setMenuActive(true)}/>
+                {
+                    menuActive ? <Menu closeMenu = {() => setMenuActive(false)}/> : ""
+                }
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/services" exact component={Services} />
+                    <Route path="/support" exact component={Support} />
+                    <Route path="/value" exact component={Values} />
+                    <Route path="/about" exact component={About} />
+                    <Route path="/legal" exact component={Legal} />
+                    <Route path="/remote-assistance" exact component={RemoteFix} />
+                </Switch>
             </div>
         </ThemeProvider>
     )
