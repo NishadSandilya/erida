@@ -24,6 +24,7 @@ const useStyles = makeStyles({
         marginTop: "1vh",
         width: "70%",
         overflow: "hidden"
+        
     },
     signup__form__textFields__input: {
         color: "#000000",
@@ -104,7 +105,7 @@ const BookRFModal = ({ closeRfModal }) => {
                 "
                             fontSize="10px"
                             width="50vw"
-                            margin="1vh 0 0 0"
+                            margin="1vh auto 0 auto"
                             lineHeight="14px"
                             color="#707070"
                             textAlign="left"
