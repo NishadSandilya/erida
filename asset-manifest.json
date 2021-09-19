@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/erida/static/css/main.6cba6624.chunk.css",
-    "main.js": "/erida/static/js/main.3c45aa17.chunk.js",
-    "main.js.map": "/erida/static/js/main.3c45aa17.chunk.js.map",
+    "main.css": "/erida/static/css/main.0204e7c5.chunk.css",
+    "main.js": "/erida/static/js/main.51f9e399.chunk.js",
+    "main.js.map": "/erida/static/js/main.51f9e399.chunk.js.map",
     "runtime-main.js": "/erida/static/js/runtime-main.401c4e67.js",
     "runtime-main.js.map": "/erida/static/js/runtime-main.401c4e67.js.map",
     "static/js/2.db0de69a.chunk.js": "/erida/static/js/2.db0de69a.chunk.js",
     "static/js/2.db0de69a.chunk.js.map": "/erida/static/js/2.db0de69a.chunk.js.map",
     "index.html": "/erida/index.html",
-    "static/css/main.6cba6624.chunk.css.map": "/erida/static/css/main.6cba6624.chunk.css.map",
+    "static/css/main.0204e7c5.chunk.css.map": "/erida/static/css/main.0204e7c5.chunk.css.map",
     "static/js/2.db0de69a.chunk.js.LICENSE.txt": "/erida/static/js/2.db0de69a.chunk.js.LICENSE.txt",
     "static/media/aboutAsset1.298afc98.png": "/erida/static/media/aboutAsset1.298afc98.png",
     "static/media/aboutAsset2.b811c9e6.png": "/erida/static/media/aboutAsset2.b811c9e6.png",
@@ -51,7 +51,7 @@
   "entrypoints": [
     "static/js/runtime-main.401c4e67.js",
     "static/js/2.db0de69a.chunk.js",
-    "static/css/main.6cba6624.chunk.css",
-    "static/js/main.3c45aa17.chunk.js"
+    "static/css/main.0204e7c5.chunk.css",
+    "static/js/main.51f9e399.chunk.js"
   ]
 }
