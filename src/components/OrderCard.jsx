@@ -58,7 +58,7 @@ const OrderCard = ({ orderDetails }) => {
                     order_id: serverResponse?.data?.payload?.razorpayOrder?.id,
                     prefill: serverResponse?.data?.payload?.prefill,
                     description: "Thank you for choosing erida",
-                    callback_url: "http://localhost:3000"
+                    callback_url: "https://erida.in/orders"
                 }
 
                 //Finally call the sdk
