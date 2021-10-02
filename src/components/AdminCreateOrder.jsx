@@ -109,7 +109,7 @@ const AdminCreateOrder = ({ closeModal }) => {
             await axios({
                 method: 'get',
                 withCredentials: true,
-                url: 'http://localhost:8000/v1/admin'
+                url: 'https://www.erida.herokuapp.com/v1/admin'
             })
             hocDisplayControls[1](() => {
                 return {
@@ -159,7 +159,7 @@ const AdminCreateOrder = ({ closeModal }) => {
             const serverResponse = await axios({
                 method: "post",
                 withCredentials: true,
-                url: "http://localhost:8000/v1/orders/new-order",
+                url: "https://www.erida.herokuapp.com/v1/orders/new-order",
                 data,
             })
             hocDisplayControls[1](() => {

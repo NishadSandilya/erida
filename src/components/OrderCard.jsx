@@ -40,7 +40,7 @@ const OrderCard = ({ orderDetails }) => {
                 const serverResponse = await axios({
                     method: 'post',
                     withCredentials: true,
-                    url: 'http://localhost:8000/v1/payments/create-order',
+                    url: 'https://www.erida.herokuapp.com/v1/payments/create-order',
                     data:{
                         orderId
                     }

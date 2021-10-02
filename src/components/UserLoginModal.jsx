@@ -94,7 +94,7 @@ const UserLoginModal = () => {
             })
             const serverResponse = await axios({
                 method: "post",
-                url: "http://localhost:8000/v1/users/phone/send-OTP",
+                url: "https://www.erida.herokuapp.com/v1/users/phone/send-OTP",
                 data
             })
             hocDisplayControls[1](() => {
@@ -152,7 +152,7 @@ const UserLoginModal = () => {
             })
             await axios({
                 method: "post",
-                url: "http://localhost:8000/v1/users/phone/login-with-phone-and-otp",
+                url: "https://www.erida.herokuapp.com/v1/users/phone/login-with-phone-and-otp",
                 data,
                 withCredentials: true
             })

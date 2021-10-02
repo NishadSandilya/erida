@@ -4,7 +4,7 @@ import { reloadWindow } from './windowReload'
 export const removeDepreciatedSST = async () => {
     await axios({
         method: "get",
-        url: "http://localhost:8000/v1/users/me/log-out",
+        url: "https://www.erida.herokuapp.com/v1/users/me/log-out",
         withCredentials: true
     })
     reloadWindow()
@@ -14,7 +14,7 @@ export const pingServer = async () => {
     try {
         await axios({
             method: "get",
-            url: "http://localhost:8000/v1",
+            url: "https://www.erida.herokuapp.com/v1",
             withCredentials: true
         })
         return true
