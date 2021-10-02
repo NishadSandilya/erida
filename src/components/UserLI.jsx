@@ -37,7 +37,7 @@ const UserLI = () => {
             })
             await axios({
                 method: "get",
-                url: "https://www.erida.herokuapp.com/v1/users/me/log-out",
+                url: "https://erida.herokuapp.com/v1/users/me/log-out",
                 withCredentials: true
             })
             hocDisplayControls[1](() => {
@@ -81,7 +81,7 @@ const UserLI = () => {
             const serverResponse = await axios({
                 method: 'get',
                 withCredentials: true,
-                url: 'https://www.erida.herokuapp.com/v1/users/me'
+                url: 'https://erida.herokuapp.com/v1/users/me'
             })
             hocDisplayControls[1](() => {
                 return {

@@ -88,7 +88,7 @@ const PhoneUpdate = ({logOut, closeModal}) => {
             const serverResponse = await axios({
                 method: 'get',
                 withCredentials: true,
-                url: 'https://www.erida.herokuapp.com/v1/users/me'
+                url: 'https://erida.herokuapp.com/v1/users/me'
             })
             hocDisplayControls[1](() => {
                 return {
@@ -146,7 +146,7 @@ const PhoneUpdate = ({logOut, closeModal}) => {
             const serverResponse = await axios({
                 method: "post",
                 withCredentials: true,
-                url: "https://www.erida.herokuapp.com/v1/users/phone/send-OTP-update-number",
+                url: "https://erida.herokuapp.com/v1/users/phone/send-OTP-update-number",
                 data
             })
             hocDisplayControls[1](() => {
@@ -208,7 +208,7 @@ const PhoneUpdate = ({logOut, closeModal}) => {
             const serverResponse = await axios({
                 method: "patch",
                 withCredentials: true,
-                url: "https://www.erida.herokuapp.com/v1/users/phone/update-phone",
+                url: "https://erida.herokuapp.com/v1/users/phone/update-phone",
                 data
             })
             hocDisplayControls[1](() => {

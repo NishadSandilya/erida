@@ -33,7 +33,7 @@ const OrdersLI = () => {
             const serverResponse = await axios({
                 method: 'get',
                 withCredentials: true,
-                url: 'https://www.erida.herokuapp.com/v1/users/me/orders'
+                url: 'https://erida.herokuapp.com/v1/users/me/orders'
             })
             hocDisplayControls[1](() => {
                 return {

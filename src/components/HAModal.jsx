@@ -219,7 +219,7 @@ const HAModal = ({ closeModal }) => {
             const serverResponse = await axios({
                 method: 'get',
                 withCredentials: true,
-                url: 'https://www.erida.herokuapp.com/v1/users/me'
+                url: 'https://erida.herokuapp.com/v1/users/me'
             })
             hocDisplayControls[1](() => {
                 return {
@@ -286,7 +286,7 @@ const HAModal = ({ closeModal }) => {
             const serverResponse = await axios({
                 method: "post",
                 withCredentials: true,
-                url: "https://www.erida.herokuapp.com/v1/orders/new-order",
+                url: "https://erida.herokuapp.com/v1/orders/new-order",
                 data,
             })
             hocDisplayControls[1](() => {

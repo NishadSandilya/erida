@@ -87,7 +87,7 @@ const ShowOrdersID = () => {
             await axios({
                 method: 'get',
                 withCredentials: true,
-                url: 'https://www.erida.herokuapp.com/v1/admin'
+                url: 'https://erida.herokuapp.com/v1/admin'
             })
             hocDisplayControls[1](() => {
                 return {
@@ -133,7 +133,7 @@ const ShowOrdersID = () => {
             const serverResponse = await axios({
                 method: "post",
                 withCredentials: true,
-                url: "https://www.erida.herokuapp.com/v1/admin/search-by-orderID",
+                url: "https://erida.herokuapp.com/v1/admin/search-by-orderID",
                 data,
             })
             setDataHere(() => serverResponse?.data?.payload)

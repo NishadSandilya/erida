@@ -39,7 +39,7 @@ const AdminConsole = () => {
             const serverResponse = await axios({
                 method: 'get',
                 withCredentials: true,
-                url: 'https://www.erida.herokuapp.com/v1/admin'
+                url: 'https://erida.herokuapp.com/v1/admin'
             })
             hocDisplayControls[1](() => {
                 return {

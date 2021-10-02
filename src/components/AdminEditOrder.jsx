@@ -125,7 +125,7 @@ const AdminEditOrder = ({ closeModal, id }) => {
             const serverResponse = await axios({
                 method: 'post',
                 withCredentials: true,
-                url: 'https://www.erida.herokuapp.com/v1/admin/search-order-by-ID',
+                url: 'https://erida.herokuapp.com/v1/admin/search-order-by-ID',
                 data: {
                     orderId: id
                 }
@@ -195,7 +195,7 @@ const AdminEditOrder = ({ closeModal, id }) => {
             const serverResponse = await axios({
                 method: "post",
                 withCredentials: true,
-                url: "https://www.erida.herokuapp.com/v1/admin/update-order",
+                url: "https://erida.herokuapp.com/v1/admin/update-order",
                 data,
             })
             hocDisplayControls[1](() => {
