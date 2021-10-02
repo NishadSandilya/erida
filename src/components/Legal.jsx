@@ -1,6 +1,4 @@
 //The Leagal component here
-import Logo from "./Logo"
-import Menu from "./MenuBtn"
 import Text from "./Text"
 
 import ImageWrapper from "./ImageWrapper"

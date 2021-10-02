@@ -1,6 +1,6 @@
 //The menu button
 
-import menuIcon from '../cdn/images/menuBtn.png'
+import menuIcon from '../cdn/images/menu.png'
 
 //The functional component here
 const Menu = ({openMenu}) => {

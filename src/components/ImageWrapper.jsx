@@ -3,7 +3,7 @@
 //Defining the functional component
 const ImageWrapper = ({margin, imageSource, alternateName, imageWidth, others, marginImg, borderRadius, className}) => {
     return (
-        <div className= {`imageWrapper${className}`} style ={{
+        <div className= {`imageWrapper${className ? className: ''}`} style ={{
             margin,
             ...others
         }}>

@@ -1,6 +1,4 @@
 //The about us component
-import Logo from "./Logo"
-import Menu from "./MenuBtn"
 import Text from "./Text"
 
 import ImageWrapper from "./ImageWrapper"
@@ -30,10 +28,7 @@ const About = () => {
                 fontWeight="500"
             />
             <Text
-                content="We are a team of Professionals trying to help common people with tech to the best we can. We 
-                have Developers, Analysts, AI-Enthusiasts, 
-                Designers, Hardware and Software 
-                Enthusiasts collaborating with us. We have over 9 years of experience in the field of Computer Hardware and troubleshooting and over 4 years of experience as developers and active problem solvers"
+                content="We are a team of Professionals trying to help common people with tech to the best we can. Our collaborators consist of Hardware and Software enthusiasts who have a substantial amount of knowledge in their fields. We focus at solving both hardware and software issues of a common man's computer and at solving the business/organizational needs of firms by providing them with affordable software solutions as well. We are currently limited on man-power and resources. However, that doesnot stop us from doing the good we want to. Aiming at the constant growth of the brand with technology stacks along with providing the necessary tech support to commons is erida"
                 fontSize="14px"
                 width="70vw"
                 margin="1vh 0 0 0"
@@ -58,14 +53,14 @@ const About = () => {
                 fontWeight="500"
             />
             <Text
-                content="We are a cloud services provider. Our
-                services are wherever we are. Our team 
+                content="We are a firm adorer of technology and our
+                services are wherever we are. For the software side, our team 
                 collaborates with each other using cloud
                 based technologies. This saves resources
                 and promotes efficiency. Maintenance, 
                 Improvement of services, analytics, 
                 addition of services all happens over the
-                air.  "
+                air. For the commons we have set up a service station in the founder's home demographically relevant to whom the services will be provided at the moment."
                 fontSize="14px"
                 width="70vw"
                 margin="1vh 0 0 0"
@@ -90,15 +85,11 @@ const About = () => {
                 fontWeight="500"
             />
             <Text
-                content="We are a registered business under the 
-                Shops and Establishment Act 1971. We are
-                a Sole Proprietorship entity with the founder
-                being the Proprietor. All our collaborators
+                content="Erida is a startup that plans to solve the common's problems regarding tech. We want the people to have the name erida forged into their brains and whenever they think of tech in general, erida should be the first name they come up with. All our collaborators
                 are on contracts. We strive for 
                 excellence in the tech industry. Initially, we
                 are starting off with limited collaborators
-                and operations. But, this does not limit us
-                providing the tech support you need. We
+                and operations. We
                 have a vision to impart tech knowledge,
                 support and services to all of the people 
                 in the most intuitive and cost effective 
@@ -106,7 +97,7 @@ const About = () => {
                 do so as we are constantly aiming for
                 growth and innovation. This is the era of
                 technology and we plan to use it to help
-                you out the most with your tech needs.  
+                the people out the most with their tech needs.  
                 
                 "
                 fontSize="14px"
@@ -133,7 +124,7 @@ const About = () => {
                 fontWeight="500"
             />
             <Text
-                content="No company is complete without employees. Currently we are not in the need of any employees or any contract based collaborators. Visit this post or follow our instagram page to know more about upcoming jobs. We are a constantly growing venture. And we will be needing collaborators in the future. For now, stay tuned. If you however, need to enquire for collaborations, please Click the button below"
+                content="Currently we are not in the need of any employees or any contract based collaborators. Visit this post or follow our instagram page to know more about upcoming jobs. We are a constantly growing venture. And we will be needing collaborators in the future. For now, stay tuned. If you however, need to enquire for collaborations, please Click the button below"
                 fontSize="14px"
                 width="70vw"
                 margin="1vh 0 0 0"

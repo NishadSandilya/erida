@@ -43,28 +43,28 @@ const Support = () => {
             />
             <div className="App__support__buttonGroup">
                 <a href="tel:8638779180">
-                <ButtonSquared
-                    content="Call Us"
-                    backgroundColor="#4C50EF"
-                    fontSize="12px"
-                    fontWeight="600"
-                    lineHeight="16px"
-                    color="white"
-                    padding="3vw 6vw"
-                    margin="3vh 5vw 0 0"
-                />
-                </a>  
+                    <ButtonSquared
+                        content="Call Us"
+                        backgroundColor="#4C50EF"
+                        fontSize="12px"
+                        fontWeight="600"
+                        lineHeight="16px"
+                        color="white"
+                        padding="3vw 6vw"
+                        margin="3vh 5vw 0 0"
+                    />
+                </a>
                 <a href="mailto:support@erida.in">
-                <ButtonSquared
-                    content="Mail Us"
-                    backgroundColor="#4C50EF"
-                    fontSize="12px"
-                    fontWeight="600"
-                    lineHeight="16px"
-                    color="white"
-                    padding="3vw 6vw"
-                    margin="3vh 0 0 0"
-                /></a>            
+                    <ButtonSquared
+                        content="Mail Us"
+                        backgroundColor="#4C50EF"
+                        fontSize="12px"
+                        fontWeight="600"
+                        lineHeight="16px"
+                        color="white"
+                        padding="3vw 6vw"
+                        margin="3vh 0 0 0"
+                    /></a>
             </div>
             <Text
                 content="Visit us at"
@@ -87,16 +87,18 @@ const Support = () => {
                 color="#707070"
                 textAlign="center"
             />
-            <ButtonSquared
-                content="Locate us on the map"
-                backgroundColor="#191847"
-                fontSize="12px"
-                fontWeight="600"
-                lineHeight="16px"
-                color="white"
-                padding="3vw 6vw"
-                margin="3vh 0 10vh 0"
-            />
+            <a href="https://www.google.com/maps?q=26.356353309557353,92.69183782580016&hl=en">
+                <ButtonSquared
+                    content="Locate us on the map"
+                    backgroundColor="#191847"
+                    fontSize="12px"
+                    fontWeight="600"
+                    lineHeight="16px"
+                    color="white"
+                    padding="3vw 6vw"
+                    margin="3vh 0 10vh 0"
+                />
+            </a>
         </div>
     )
 }

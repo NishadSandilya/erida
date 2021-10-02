@@ -1,7 +1,5 @@
 //The home component
 
-import Logo from "./Logo"
-import Menu from "./MenuBtn"
 import Text from "./Text"
 import cloudImg from "../cdn/images/cloud.png"
 import ImageWrapper from "./ImageWrapper"
@@ -12,7 +10,7 @@ import guideFirstPic from "../cdn/images/guideFirstPic.png"
 import guideSecondPic from "../cdn/images/guideSecondPic.png"
 import guideThirdPic from "../cdn/images/guideThirdPic.png"
 import ButtonSquared from "./ButtonSquared"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 //Describe the Home component
 const Home = () => {
@@ -32,7 +30,7 @@ const Home = () => {
                 textAlign="center"
             />
             <Text
-                content="Welcome to Nagaon's first Computer Cloud Service Platform and Extravagant Gaming Services"
+                content="Welcome to Nagaon's first Semi-Automated, Affordable and reliant Computer Service Platform"
                 fontSize="16px"
                 width="70vw"
                 margin="2.5vh 0 0 0"
@@ -53,17 +51,17 @@ const Home = () => {
                 margin="10vh 0 0 0"
                 lineHeight="28px"
                 color="#707070"
-                textAlign="left"
+                textAlign="center"
                 fontWeight="500"
             />
             <Text
-                content="Erida is for all. Whether you know about technology or not, we will be forever ready to help you out. Get your PC servicing Done professionally at the lowest possible prices. Browse our provided services in the menu and come to our first cloud service station in Nagaon. That's it. We will take care of the rest."
+                content="With a semi-automated platform where you can either opt for a walk-in service or an online remote service and even book a home service at the cheapest rates ever, erida plans to change how you think of the PC world. Get your PC servicing Done today professionally and authentically with erida."
                 fontSize="14px"
                 width="70vw"
                 margin="1vh 0 0 0"
                 lineHeight="22px"
                 color="#707070"
-                textAlign="left"
+                textAlign="center"
             />
             <ImageWrapper
                 imageSource={secondPicHome}
@@ -109,13 +107,13 @@ const Home = () => {
                 <Text
                     content="Browse the Required service in our web app
                     The prices are super 
-                    affordable "
+                    affordable BTW"
                     fontSize="14px"
                     lineHeight="22px"
                     color="#707070"
                     fontWeight="400"
-                    width = "55%"
-                    textAlign = "right"
+                    width="55%"
+                    textAlign="right"
                     others={{
                         position: "absolute",
                         bottom: "5%",
@@ -149,16 +147,13 @@ const Home = () => {
                     }}
                 />
                 <Text
-                    content="Visit our Cloud
-                    Service Station
-                    and tell us you want
-                    the service"
+                    content="Opt for a walk-in service, or book online to fix your computer from home"
                     fontSize="14px"
                     lineHeight="22px"
                     color="#707070"
                     fontWeight="400"
-                    width = "55%"
-                    textAlign = "left"
+                    width="55%"
+                    textAlign="left"
                     others={{
                         position: "absolute",
                         bottom: "5%",
@@ -192,16 +187,13 @@ const Home = () => {
                     }}
                 />
                 <Text
-                    content="Do your thing
-                    until we finish servicing
-                    your product. When its done,
-                    we will give you a call"
+                    content="That's it. We will inform you once the service is done gracefully"
                     fontSize="14px"
                     lineHeight="22px"
                     color="#707070"
                     fontWeight="400"
-                    width = "55%"
-                    textAlign = "right"
+                    width="55%"
+                    textAlign="right"
                     others={{
                         position: "absolute",
                         bottom: "5%",
@@ -231,17 +223,17 @@ const Home = () => {
                 color="#707070"
                 textAlign="center"
             />
-            <Link to = "/services">
-            <ButtonSquared
-                content = "Browse Services"
-                backgroundColor = "#3991E9"
-                fontSize = "12px"
-                fontWeight = "600"
-                lineHeight = "16px"
-                color = "white"
-                padding = "3vw 4vw"
-                margin = "3vh 0 0 0"
-            />
+            <Link to="/services">
+                <ButtonSquared
+                    content="Browse Services"
+                    backgroundColor="#3991E9"
+                    fontSize="12px"
+                    fontWeight="600"
+                    lineHeight="16px"
+                    color="white"
+                    padding="3vw 4vw"
+                    margin="3vh 0 0 0"
+                />
             </Link>
             <ImageWrapper
                 imageSource={thirdPicHome}
@@ -262,7 +254,7 @@ const Home = () => {
             <Text
                 content="Not used to the Online way of 
                 doing things? Get face to face 
-                with us and we will guide you 
+                with us and we will help you 
                 solve your tech problems"
                 fontSize="14px"
                 width="70vw"
@@ -271,16 +263,19 @@ const Home = () => {
                 color="#707070"
                 textAlign="center"
             />
-            <ButtonSquared
-                content = "Take me to erida"
-                backgroundColor = "#4C50EF"
-                fontSize = "12px"
-                fontWeight = "600"
-                lineHeight = "16px"
-                color = "white"
-                padding = "3vw 4vw"
-                margin = "3vh 0 10vh 0"
-            />
+            <a href="https://www.google.com/maps?q=26.356353309557353,92.69183782580016&hl=en">
+                <ButtonSquared
+                    content="Take me to erida"
+                    backgroundColor="#4C50EF"
+                    fontSize="12px"
+                    fontWeight="600"
+                    lineHeight="16px"
+                    color="white"
+                    padding="3vw 4vw"
+                    margin="3vh 0 10vh 0"
+                />
+            </a>
+
         </div>
     )
 }

@@ -1,9 +1,9 @@
 //The squared button component
 
 //The functional component
-const ButtonRound = ({content, backgroundColor, color, width, height, fontSize, padding, margin, fontWeight, lineHeight}) => {
+const ButtonRound = ({content, backgroundColor, color, width, height, fontSize, padding, margin, fontWeight, lineHeight, onClick, className, opacity}) => {
     return (
-        <div className="roundButton" style = {{
+        <div className={`roundButton${className ? className : ""}`} onClick = {onClick} style = {{
             backgroundColor,
             color,
             width,
@@ -13,7 +13,8 @@ const ButtonRound = ({content, backgroundColor, color, width, height, fontSize, 
             padding,
             margin,
             fontWeight,
-            lineHeight
+            lineHeight,
+            opacity
         }}>
             {content}
         </div>
