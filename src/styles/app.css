@@ -2035,7 +2035,7 @@ form::after, form ::before, form * {
   display: none;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 480px) {
   #root, #portal {
     display: none;
   }
