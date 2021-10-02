@@ -58,7 +58,7 @@ const OrderCard = ({ orderDetails }) => {
                     order_id: serverResponse?.data?.payload?.razorpayOrder?.id,
                     prefill: serverResponse?.data?.payload?.prefill,
                     description: "Thank you for choosing erida",
-                    callback_url: "https://erida.in"
+                    callback_url: "https://erida.herokuapp.com/v1/payments/handle-redirect"
                 }
 
                 //Finally call the sdk
