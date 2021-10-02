@@ -2035,52 +2035,6 @@ form::after, form ::before, form * {
   display: none;
 }
 
-@media only screen and (orientation: landscape) {
-  #root, #portal {
-    display: none;
-  }
-  .defaultGreetings {
-    width: 100vw;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: white;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .defaultGreetings__imgContainer {
-    width: 60vw;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  .defaultGreetings__imgContainer img {
-    width: 100%;
-  }
-  .defaultGreetings__content1 {
-    color: #707070;
-    max-width: 60vw;
-    font-size: 10px;
-    text-align: center;
-  }
-  .defaultGreetings__content2 {
-    color: #a5a5a5;
-    font-weight: 500;
-    max-width: 80vw;
-    font-size: 18px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-}
-
 @media only screen and (min-width: 420px) {
   #root, #portal {
     display: none;

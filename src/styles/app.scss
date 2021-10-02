@@ -1184,42 +1184,7 @@ form{
 .defaultGreetings{
     display: none;
 }
-@media only screen and (orientation:landscape){
-    #root, #portal{
-        display: none;
-    }
-    .defaultGreetings{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        justify-content: center;
-        align-items: center;
-        &__imgContainer{
-            width: 60vw;
-            height: auto;
-            margin-bottom: 20px;
-            & img{
-                width: 100%;
-            }
-        }
-        &__content1{
-            color: #707070;
-            max-width: 60vw;
-            font-size: 10px;
-            text-align: center;
-        }
-        &__content2{
-            color: #a5a5a5;
-            font-weight: 500;
-            max-width: 80vw;
-            font-size: 18px;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-    }
-}
+
 @media only screen and (min-width: 420px) {
     #root, #portal{
         display: none;
