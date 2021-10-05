@@ -20,33 +20,11 @@ import { useForm, Controller } from 'react-hook-form';
 import * as yup from 'yup';
 import OrderAdminCard from './OrderAdminCard'
 
-const phoneRegExp = /\b\d{10}\b/;
-
 //Create custom material ui styles
 const useStyles = makeStyles({
     form__title__root: {
         color: "#707070",
         marginTop: "5vh"
-    },
-    form__textFields__root: {
-        marginTop: "3vh",
-        width: "60%"
-    },
-    form__textFields__input: {
-        color: "#000000",
-        fontSize: "14px",
-    },
-    form__textFields__label: {
-        color: "#707070",
-        fontSize: "14px",
-    },
-    form__textFields__notchedOutline: {
-        // borderColor: "#707070"
-    },
-    form__textFields__input__root: {
-        "&:hover $form__textFields__notchedOutline": {
-            // borderColor: "#707070"
-        }
     },
     form__button__root: {
         color: "white",
@@ -58,18 +36,10 @@ const useStyles = makeStyles({
     }
 })
 
-//Create a validation schema with yup
-const validationSchema = yup.object().shape({
-    numbers: yup.string().required("Please enter your phone number").matches(phoneRegExp, "Please enter a valid 10-digit phone number")
-})
-
 //The primary functional component here
 const ShowAllOrders = () => {
 
     const classes = useStyles();
-    const { control, handleSubmit } = useForm({
-        resolver: yupResolver(validationSchema)
-    })
 
     const [{ infoDisplayControls }, , { hocDisplayControls }] = useContext(AppContext)
 
@@ -134,7 +104,6 @@ const ShowAllOrders = () => {
                 method: "get",
                 withCredentials: true,
                 url: "https://erida.herokuapp.com/v1/admin/all-orders",
-                data,
             })
             setDataHere(() => serverResponse?.data?.payload)
             hocDisplayControls[1](() => {
@@ -187,9 +156,9 @@ const ShowAllOrders = () => {
     return (
         <div className="admin">
             {displayContent ? <div className="admin__content">
-                <form onSubmit = {handleSubmit(onFormSubmit)} >
+                <form onSubmit = {onFormSubmit} >
                 <Typography
-                    children="Search by Phone"
+                    children="See All Orders"
                     variant="h5"
                     classes={{
                         root: classes.form__title__root,
