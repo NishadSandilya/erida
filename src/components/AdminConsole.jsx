@@ -131,6 +131,19 @@ const AdminConsole = () => {
                     padding="3vw 4vw"
                     margin="3vh 0 0 0"
                 />
+                <Link to='/restricted/admin/console/show-all-orders'>
+                    <ButtonSquared
+                        content="Show All Orders"
+                        backgroundColor="black"
+                        fontSize="12px"
+                        fontWeight="600"
+                        lineHeight="16px"
+                        color="white"
+                        width="180px"
+                        padding="3vw 4vw"
+                        margin="3vh 0 0 0"
+                    />
+                </Link>
                 <Link to='/restricted/admin/console/search-orders-by-phone'>
                     <ButtonSquared
                         content="Search Orders by Phone"

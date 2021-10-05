@@ -58,7 +58,10 @@ const validationSchema = yup.object().shape({
     lastname: yup.string(),
     numbers: yup.string().required("Please enter your phone number").matches(phoneRegExp, "Please enter a valid 10-digit phone number"),
     address: yup.string(),
-    email: yup.string().email("Please enter a valid email address"),orderType: yup.string().oneOf(["Onsite Service", "Remote Assist", "Gaming Session", "Custom Order"])
+    email: yup.string().email("Please enter a valid email address"),orderType: yup.string().oneOf(["Onsite Service", "Remote Assist", "Gaming Session", "Custom Order"]),
+    orderStatus: yup.string().oneOf(['Processing', 'Completed']),
+    paymentCompleted: yup.boolean(),
+    paymentMode: yup.string().oneOf(['Cash', 'UPI Apps', 'Razorpay'])
 })
 
 const AdminCreateOrder = ({ closeModal }) => {
@@ -521,6 +524,102 @@ const AdminCreateOrder = ({ closeModal }) => {
                                 variant="outlined"
                                 type="text"
                                 label="Full Address"
+                                color="primary"
+                                value={value}
+                                onChange={onChange}
+                                error={Boolean(error)}
+                                helperText={error ? error.message : ""}
+                                InputLabelProps={{
+                                    classes: {
+                                        root: classes.form__textFields__label
+                                    }
+                                }}
+                                classes={{
+                                    root: classes.form__textFields__root,
+                                }}
+                                InputProps={{
+                                    classes: {
+                                        root: classes.form__textFields__input__root,
+                                        input: classes.form__textFields__input,
+                                        notchedOutline: classes.form__textFields__notchedOutline
+                                    }
+                                }}
+                            />
+                        )}
+                    />
+                    <Controller
+                        name="orderStatus"
+                        defaultValue=""
+                        control={control}
+                        render={({ field: { onChange, value }, fieldState: { error } }) => (
+                            <TextField
+                                variant="outlined"
+                                type="text"
+                                label="Order Status"
+                                color="primary"
+                                value={value}
+                                onChange={onChange}
+                                error={Boolean(error)}
+                                helperText={error ? error.message : ""}
+                                InputLabelProps={{
+                                    classes: {
+                                        root: classes.form__textFields__label
+                                    }
+                                }}
+                                classes={{
+                                    root: classes.form__textFields__root,
+                                }}
+                                InputProps={{
+                                    classes: {
+                                        root: classes.form__textFields__input__root,
+                                        input: classes.form__textFields__input,
+                                        notchedOutline: classes.form__textFields__notchedOutline
+                                    }
+                                }}
+                            />
+                        )}
+                    />
+                    <Controller
+                        name="paymentCompleted"
+                        defaultValue=""
+                        control={control}
+                        render={({ field: { onChange, value }, fieldState: { error } }) => (
+                            <TextField
+                                variant="outlined"
+                                type="text"
+                                label="Payment Completed?"
+                                color="primary"
+                                value={value}
+                                onChange={onChange}
+                                error={Boolean(error)}
+                                helperText={error ? error.message : ""}
+                                InputLabelProps={{
+                                    classes: {
+                                        root: classes.form__textFields__label
+                                    }
+                                }}
+                                classes={{
+                                    root: classes.form__textFields__root,
+                                }}
+                                InputProps={{
+                                    classes: {
+                                        root: classes.form__textFields__input__root,
+                                        input: classes.form__textFields__input,
+                                        notchedOutline: classes.form__textFields__notchedOutline
+                                    }
+                                }}
+                            />
+                        )}
+                    />
+                    <Controller
+                        name="paymentMode"
+                        defaultValue=""
+                        control={control}
+                        render={({ field: { onChange, value }, fieldState: { error } }) => (
+                            <TextField
+                                variant="outlined"
+                                type="text"
+                                label="Payment Mode"
                                 color="primary"
                                 value={value}
                                 onChange={onChange}

@@ -20,7 +20,7 @@ import { useForm, Controller } from 'react-hook-form';
 import * as yup from 'yup';
 import OrderAdminCard from './OrderAdminCard'
 
-const idRegExp = /\b\d{8}\b/;
+const phoneRegExp = /\b\d{10}\b/;
 
 //Create custom material ui styles
 const useStyles = makeStyles({
@@ -60,11 +60,11 @@ const useStyles = makeStyles({
 
 //Create a validation schema with yup
 const validationSchema = yup.object().shape({
-    orderId: yup.string().required("Please enter an Order ID")
+    numbers: yup.string().required("Please enter your phone number").matches(phoneRegExp, "Please enter a valid 10-digit phone number")
 })
 
 //The primary functional component here
-const ShowOrdersID = () => {
+const ShowAllOrders = () => {
 
     const classes = useStyles();
     const { control, handleSubmit } = useForm({
@@ -73,7 +73,7 @@ const ShowOrdersID = () => {
 
     const [{ infoDisplayControls }, , { hocDisplayControls }] = useContext(AppContext)
 
-    const [dataHere, setDataHere] = useState()
+    const [dataHere, setDataHere] = useState([])
 
     const [displayContent, setDisplayContent] = useState(false)
 
@@ -131,13 +131,12 @@ const ShowOrdersID = () => {
                 }
             })
             const serverResponse = await axios({
-                method: "post",
+                method: "get",
                 withCredentials: true,
-                url: "https://erida.herokuapp.com/v1/admin/search-by-orderID",
+                url: "https://erida.herokuapp.com/v1/admin/all-orders",
                 data,
             })
             setDataHere(() => serverResponse?.data?.payload)
-            
             hocDisplayControls[1](() => {
                 return {
                     visibility: false
@@ -190,49 +189,16 @@ const ShowOrdersID = () => {
             {displayContent ? <div className="admin__content">
                 <form onSubmit = {handleSubmit(onFormSubmit)} >
                 <Typography
-                    children="Search by Order ID"
+                    children="Search by Phone"
                     variant="h5"
                     classes={{
                         root: classes.form__title__root,
                     }}
                 />
-                <Controller
-                    name="orderId"
-                    defaultValue=""
-                    control={control}
-                    render={({ field: { onChange, value }, fieldState: { error } }) => (
-                        <TextField
-                            variant="outlined"
-                            type="tel"
-                            label="Order ID"
-                            color="primary"
-                            value={value}
-                            onChange={onChange}
-                            error={Boolean(error)}
-                            autoFocus
-                            helperText={error ? error.message : ""}
-                            InputLabelProps={{
-                                classes: {
-                                    root: classes.form__textFields__label
-                                }
-                            }}
-                            classes={{
-                                root: classes.form__textFields__root,
-                            }}
-                            InputProps={{
-                                classes: {
-                                    root: classes.form__textFields__input__root,
-                                    input: classes.form__textFields__input,
-                                    notchedOutline: classes.form__textFields__notchedOutline
-                                }
-                            }}
-                        />
-                    )}
-                />
                 <Button
                     type="submit"
                     variant="contained"
-                    children="Search"
+                    children="Go"
                     size="medium"
                     classes={{
                         root: classes.form__button__root,
@@ -240,7 +206,7 @@ const ShowOrdersID = () => {
                 />
                 </form>
                 <div style={{ marginBottom: "5vh" }}></div>
-                {dataHere ? "" : <Text
+                {dataHere.length ? "" : <Text
                 content="There are no orders to be shown"
                 fontSize="14px"
                 width="70vw"
@@ -249,7 +215,9 @@ const ShowOrdersID = () => {
                 color="#707070"
                 textAlign="center"
             />}
-            {dataHere ? <OrderAdminCard key={dataHere.orderId} orderDetails={dataHere}/> : ""}
+            {dataHere.map(order => {
+                return <OrderAdminCard key={order.orderId} orderDetails={order} />
+            })}
             <div style={{ marginBottom: "10vh" }}></div>
             </div> : ""}
             {displayContent ? "" : <div className="admin__noContent">
@@ -286,4 +254,4 @@ const ShowOrdersID = () => {
 
 
 //Default export here
-export default ShowOrdersID
+export default ShowAllOrders

@@ -137,7 +137,6 @@ const ShowOrdersPhone = () => {
                 data,
             })
             setDataHere(() => serverResponse?.data?.payload)
-            console.log(dataHere)
             hocDisplayControls[1](() => {
                 return {
                     visibility: false

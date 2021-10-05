@@ -24,6 +24,11 @@ import Orders from './components/Orders'
 import HOCmini from './components/HOCmini'
 import ShowOrdersPhone from './components/ShowOrdersPhone'
 import ShowOrdersID from './components/ShowOrdersID'
+import ShowAllOrders from './components/ShowAllOrders'
+import PrivacyPolicy from './components/PrivacyPolicy'
+import TandC from './components/TandC'
+import Disclaimer from './components/Disclaimer'
+import RefundPolicy from './components/RefundPolicy'
 const appTheme = createTheme({
     palette: {
         primary: {
@@ -67,12 +72,17 @@ const App = () => {
                     <Route path="/value" exact component={Values} />
                     <Route path="/about" exact component={About} />
                     <Route path="/legal" exact component={Legal} />
+                    <Route path="/legal/privacy-policy" exact component={PrivacyPolicy} />
+                    <Route path="/legal/terms-and-conditions" exact component={TandC} />
+                    <Route path="/legal/disclaimer" exact component={Disclaimer} />
+                    <Route path="/legal/refund-policy" exact component={RefundPolicy} />
                     <Route path="/orders" exact component={Orders} />
                     <Route path="/remote-assistance" exact component={RemoteFix} />
                     <Route path="/home-assistance" exact component={HomeAssist} />
                     <Route path="/restricted/admin/console" exact component={AdminConsole} />
                     <Route path="/restricted/admin/console/search-orders-by-phone" exact component={ShowOrdersPhone} />
                     <Route path="/restricted/admin/console/search-orders-by-ID" exact component={ShowOrdersID} />
+                    <Route path="/restricted/admin/console/show-all-orders" exact component={ShowAllOrders} />
                     <Route path="*" children={<Redirect exact to="/" />} />
                 </Switch>
             </div>
