@@ -59,9 +59,9 @@ const validationSchema = yup.object().shape({
     numbers: yup.string().required("Please enter your phone number").matches(phoneRegExp, "Please enter a valid 10-digit phone number"),
     address: yup.string(),
     email: yup.string().email("Please enter a valid email address"),orderType: yup.string().oneOf(["Onsite Service", "Remote Assist", "Gaming Session", "Custom Order"]),
-    orderStatus: yup.string().oneOf(['Processing', 'Completed']),
-    paymentCompleted: yup.boolean(),
-    paymentMode: yup.string().oneOf(['Cash', 'UPI Apps', 'Razorpay'])
+    orderStatus: yup.string().oneOf(['Processing', 'Completed', ""]),
+    paymentCompleted: yup.string().oneOf(["true", "false", ""]),
+    paymentMode: yup.string().oneOf(['Cash', 'UPI Apps', 'Razorpay', ""])
 })
 
 const AdminCreateOrder = ({ closeModal }) => {
