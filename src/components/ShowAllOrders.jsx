@@ -89,11 +89,7 @@ const ShowAllOrders = () => {
             }, 2000)
         }
     }
-    useEffect(() => {
-        serverREQ()
-    }, [])
-
-    const onFormSubmit = async data => {
+    const loadOrders = async () => {
         try {
             hocDisplayControls[1](() => {
                 return {
@@ -152,28 +148,14 @@ const ShowAllOrders = () => {
             if(error?.response?.status === 499) removeDepreciatedSST()
         }
     }
+    useEffect(() => {
+        serverREQ()
+        loadOrders()
+    }, [])
 
     return (
         <div className="admin">
             {displayContent ? <div className="admin__content">
-                <form onSubmit = {onFormSubmit} >
-                <Typography
-                    children="See All Orders"
-                    variant="h5"
-                    classes={{
-                        root: classes.form__title__root,
-                    }}
-                />
-                <Button
-                    type="submit"
-                    variant="contained"
-                    children="Go"
-                    size="medium"
-                    classes={{
-                        root: classes.form__button__root,
-                    }}
-                />
-                </form>
                 <div style={{ marginBottom: "5vh" }}></div>
                 {dataHere.length ? "" : <Text
                 content="There are no orders to be shown"
