@@ -263,7 +263,7 @@ const Home = () => {
                 color="#707070"
                 textAlign="center"
             />
-            <a href="https://www.google.com/maps?q=26.356353309557353,92.69183782580016&hl=en">
+            <a href="https://www.google.com/maps/place/erida+Service+%26+Gaming/@26.3564842,92.6917527,15z/data=!4m5!3m4!1s0x0:0x2c19db13536debb9!8m2!3d26.3564842!4d92.6917527">
                 <ButtonSquared
                     content="Take me to erida"
                     backgroundColor="#4C50EF"
