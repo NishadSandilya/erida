@@ -91,7 +91,7 @@ export const servicesData = [
     {
         displayImg: servicesAsset8,
         title: "Thermal Optimizations",
-        price: 299,
+        price: 399,
         details: {
             title: "Thermal Optimizations",
             description: "Having an issue where your PC acts like a room heater? Umm, worry not now, we might have the perfect fix for your PC. Our thermal Optimization plans will give your computer enough breating room to rejuvinate. Hence increasing performance and efficiency",
