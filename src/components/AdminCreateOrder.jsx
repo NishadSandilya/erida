@@ -51,6 +51,7 @@ const useStyles = makeStyles({
 })
 
 const phoneRegExp = /\b\d{10}\b/;
+const promoRegExp = /^[a-zA-Z0-9]{6}$/
 
 //Create a validation schema with yup
 const validationSchema = yup.object().shape({
@@ -61,7 +62,8 @@ const validationSchema = yup.object().shape({
     email: yup.string().email("Please enter a valid email address"),orderType: yup.string().oneOf(["Onsite Service", "Remote Assist", "Gaming Session", "Custom Order"]),
     orderStatus: yup.string().oneOf(['Processing', 'Completed', ""]),
     paymentCompleted: yup.string().oneOf(["true", "false", ""]),
-    paymentMode: yup.string().oneOf(['Cash', 'UPI Apps', 'Razorpay', ""])
+    paymentMode: yup.string().oneOf(['Cash', 'UPI Apps', 'Razorpay', ""]),
+    promo: yup.string().matches(promoRegExp, "Please enter a valid 6 letter Promo Code")
 })
 
 const AdminCreateOrder = ({ closeModal }) => {
@@ -620,6 +622,38 @@ const AdminCreateOrder = ({ closeModal }) => {
                                 variant="outlined"
                                 type="text"
                                 label="Payment Mode"
+                                color="primary"
+                                value={value}
+                                onChange={onChange}
+                                error={Boolean(error)}
+                                helperText={error ? error.message : ""}
+                                InputLabelProps={{
+                                    classes: {
+                                        root: classes.form__textFields__label
+                                    }
+                                }}
+                                classes={{
+                                    root: classes.form__textFields__root,
+                                }}
+                                InputProps={{
+                                    classes: {
+                                        root: classes.form__textFields__input__root,
+                                        input: classes.form__textFields__input,
+                                        notchedOutline: classes.form__textFields__notchedOutline
+                                    }
+                                }}
+                            />
+                        )}
+                    />
+                    <Controller
+                        name="promo"
+                        defaultValue=""
+                        control={control}
+                        render={({ field: { onChange, value }, fieldState: { error } }) => (
+                            <TextField
+                                variant="outlined"
+                                type="text"
+                                label="Promo Code"
                                 color="primary"
                                 value={value}
                                 onChange={onChange}
