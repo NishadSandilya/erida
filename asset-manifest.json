@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.e94c54ce.chunk.css",
-    "main.js": "/static/js/main.a637cdc9.chunk.js",
-    "main.js.map": "/static/js/main.a637cdc9.chunk.js.map",
+    "main.js": "/static/js/main.2dd04c51.chunk.js",
+    "main.js.map": "/static/js/main.2dd04c51.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3356d12c.js",
     "runtime-main.js.map": "/static/js/runtime-main.3356d12c.js.map",
-    "static/js/2.89aad7ba.chunk.js": "/static/js/2.89aad7ba.chunk.js",
-    "static/js/2.89aad7ba.chunk.js.map": "/static/js/2.89aad7ba.chunk.js.map",
+    "static/js/2.61109c66.chunk.js": "/static/js/2.61109c66.chunk.js",
+    "static/js/2.61109c66.chunk.js.map": "/static/js/2.61109c66.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.e94c54ce.chunk.css.map": "/static/css/main.e94c54ce.chunk.css.map",
-    "static/js/2.89aad7ba.chunk.js.LICENSE.txt": "/static/js/2.89aad7ba.chunk.js.LICENSE.txt",
+    "static/js/2.61109c66.chunk.js.LICENSE.txt": "/static/js/2.61109c66.chunk.js.LICENSE.txt",
     "static/media/Affiliate.57344951.png": "/static/media/Affiliate.57344951.png",
     "static/media/app.css": "/static/media/serviceModalBackground.ca136960.png",
     "static/media/PCBuild.14b6b10f.png": "/static/media/PCBuild.14b6b10f.png",
@@ -54,8 +54,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3356d12c.js",
-    "static/js/2.89aad7ba.chunk.js",
+    "static/js/2.61109c66.chunk.js",
     "static/css/main.e94c54ce.chunk.css",
-    "static/js/main.a637cdc9.chunk.js"
+    "static/js/main.2dd04c51.chunk.js"
   ]
 }
