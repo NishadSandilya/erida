@@ -51,7 +51,7 @@ const useStyles = makeStyles({
 })
 
 const phoneRegExp = /\b\d{10}\b/;
-const promoRegExp = /^[a-zA-Z0-9]{6}$/
+const promoRegExp = /(^[a-zA-Z0-9]{6}$)?/
 
 //Create a validation schema with yup
 const validationSchema = yup.object().shape({
